@@ -1,0 +1,14 @@
+<script>
+$(document).ready(function(){
+	fullHeight();
+	$( window ).resize(function() {
+		fullHeight();
+	});
+});
+function fullHeight()
+{
+	var h = $( window ).height().replace('px');
+	var h = ($(window).height() < 600) ? 600:h;
+	$('#MainContaine').css('height',h)
+}
+</script>
